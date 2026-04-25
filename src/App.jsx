@@ -7,7 +7,7 @@ const App = () => {
   // Handle scroll to highlight active navigation link
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'education', 'skills'];
+      const sections = ['home', 'about', 'experience', 'education', 'projects', 'skills'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -44,7 +44,7 @@ const App = () => {
               <span className="font-bold text-xl tracking-tight text-indigo-700">JC.</span>
             </div>
             <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'experience', 'education', 'skills'].map((item) => (
+              {['home', 'about', 'experience', 'education', 'projects', 'skills'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollTo(item)}
@@ -80,6 +80,16 @@ const App = () => {
             <Mail className="w-5 h-5 mr-2" />
             Contact Me
           </a>
+          <a href="https://drive.google.com/file/d/1nEdX-JqY16Ocsq405fToH8-OefWwkZDk/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 border border-indigo-200 text-base font-medium rounded-lg text-indigo-700 bg-indigo-50 hover:bg-indigo-100 shadow-sm transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mr-2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            Resume
+          </a>
           <a href="tel:+911234567890" className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 shadow-sm transition-all">
             <Phone className="w-5 h-5 mr-2" />
             +91 1234567890
@@ -105,18 +115,33 @@ const App = () => {
               allow me to excel not only in technical roles but also in leadership and training environments. 
               Whether I am writing code or delivering motivational talks, my goal is to create a positive and lasting impact.
             </p>
-            <a 
-              href="https://github.com/jayshrichouhan" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-flex items-center px-5 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors font-medium shadow-sm"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mr-2">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
-                <path d="M9 18c-4.51 2-5-2-7-2" />
-              </svg>
-              View My GitHub
-            </a>
+            <div className="flex flex-wrap gap-4">
+              <a 
+                href="https://github.com/jayshrichouhan" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center px-5 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors font-medium shadow-sm"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mr-2">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+                GitHub
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/jayshri-chouhan-46150b304/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center px-5 py-2.5 bg-[#0A66C2] text-white rounded-lg hover:bg-[#084e96] transition-colors font-medium shadow-sm"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mr-2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -175,35 +200,60 @@ const App = () => {
         </div>
       </section>
 
-      {/* Education Section */}
-      <section id="education" className="py-20 bg-white">
+      {/* Projects Section */}
+      <section id="projects" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center mb-10">
-            <GraduationCap className="w-8 h-8 text-indigo-600 mr-4" />
-            <h2 className="text-3xl font-bold text-slate-900">Education</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8 text-indigo-600 mr-4">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <h2 className="text-3xl font-bold text-slate-900">Projects</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             
-            {/* Degree 1 */}
-            <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-100 rounded-bl-full -mr-4 -mt-4 opacity-50"></div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Master's Degree in Computer Applications</h3>
-              <p className="text-indigo-600 font-medium mb-4">June 2025 - Present</p>
-              <div className="flex items-start text-slate-600 mb-2">
-                <MapPin className="w-5 h-5 mr-2 text-slate-400 shrink-0" />
-                <span>Dev Sanskriti Vishwavidyalaya, Haridwar, Uttarakhand</span>
+            {/* Project 1 */}
+            <div className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col h-full">
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-xl font-bold text-slate-900">30 Projects on CRUD Operations</h3>
+                <a href="https://github.com/jayshrichouhan" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-indigo-600 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                </a>
+              </div>
+              <p className="text-slate-600 mb-6 flex-grow">
+                A comprehensive collection of 30 distinct projects demonstrating proficiency in Create, Read, Update, and Delete (CRUD) operations across various tech stacks and databases.
+              </p>
+              <div className="flex flex-wrap gap-2 mt-auto">
+                {['CRUD', 'Database', 'Web Dev', 'Flask', 'Django'].map((tag) => (
+                  <span key={tag} className="text-xs font-medium bg-slate-100 text-slate-600 px-2.5 py-1 rounded-md">
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
 
-            {/* Degree 2 */}
-            <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-100 rounded-bl-full -mr-4 -mt-4 opacity-50"></div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Bachelor of Science Degree in Information Technology</h3>
-              <p className="text-indigo-600 font-medium mb-4">June 2021 - May 2024</p>
-              <div className="flex items-start text-slate-600 mb-2">
-                <MapPin className="w-5 h-5 mr-2 text-slate-400 shrink-0" />
-                <span>Dev Sanskriti Vishwavidyalaya, Haridwar, Uttarakhand</span>
-              </div>
+            {/* View More on Github Card */}
+            <div className="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-8 shadow-sm hover:shadow-md transition-all text-white flex flex-col justify-center items-center text-center h-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12 mb-4 text-indigo-200">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+              <h3 className="text-2xl font-bold mb-2">Want to see more?</h3>
+              <p className="text-indigo-100 mb-6 max-w-sm">
+                Check out my GitHub profile for more projects, code repositories, and contributions.
+              </p>
+              <a 
+                href="https://github.com/jayshrichouhan" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center px-6 py-3 bg-white text-indigo-700 font-bold rounded-lg hover:bg-slate-50 transition-colors shadow-sm"
+              >
+                View All Projects
+              </a>
             </div>
 
           </div>
@@ -264,7 +314,7 @@ const App = () => {
       <footer className="bg-slate-950 text-slate-400 py-12 text-center">
         <div className="max-w-6xl mx-auto px-4 flex flex-col items-center">
           <h2 className="text-2xl font-bold text-white mb-6">Jayshree Chouhan</h2>
-          <div className="flex space-x-6 mb-8">
+          <div className="flex flex-wrap justify-center gap-6 mb-8">
             <a href="mailto:chouhanjayshree03@gmail.com" className="hover:text-white transition-colors flex items-center">
               <Mail className="w-5 h-5 mr-2" />
               chouhanjayshree03@gmail.com
@@ -272,6 +322,14 @@ const App = () => {
             <a href="tel:+911234567890" className="hover:text-white transition-colors flex items-center">
               <Phone className="w-5 h-5 mr-2" />
               +91 1234567890
+            </a>
+            <a href="https://www.linkedin.com/in/jayshri-chouhan-46150b304/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0A66C2] transition-colors flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 mr-2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              LinkedIn
             </a>
           </div>
           <p className="text-sm">
