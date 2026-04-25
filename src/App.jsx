@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Briefcase, GraduationCap, Code, User, ChevronDown } from 'lucide-react';
+import { Mail, Phone, MapPin, Briefcase, GraduationCap, Code, User, ChevronDown, Github } from 'lucide-react';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -80,7 +80,7 @@ const App = () => {
             <Mail className="w-5 h-5 mr-2" />
             Contact Me
           </a>
-          <a href="tel:+91 1234564890" className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 shadow-sm transition-all">
+          <a href="tel:+911234567890" className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 shadow-sm transition-all">
             <Phone className="w-5 h-5 mr-2" />
             +91 1234567890
           </a>
@@ -98,13 +98,22 @@ const App = () => {
             <h2 className="text-3xl font-bold text-slate-900">About Me</h2>
           </div>
           <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm">
-            <p className="text-lg text-slate-700 leading-relaxed">
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
               I am a dedicated professional with a background in Information Technology and Computer Applications. 
               I am committed to working efficiently and effectively, always striving to deliver impactful results in 
               everything I do. My strong communication skills, combined with my ability to engage and inspire, 
               allow me to excel not only in technical roles but also in leadership and training environments. 
               Whether I am writing code or delivering motivational talks, my goal is to create a positive and lasting impact.
             </p>
+            <a 
+              href="https://github.com/jayshrichouhan" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center px-5 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors font-medium shadow-sm"
+            >
+              <Github className="w-5 h-5 mr-2" />
+              View My GitHub
+            </a>
           </div>
         </div>
       </section>
@@ -212,7 +221,7 @@ const App = () => {
             <div>
               <h3 className="text-xl font-semibold mb-6 text-indigo-300 border-b border-slate-700 pb-2">Software & Web</h3>
               <div className="flex flex-wrap gap-3">
-                {['C / C++', 'HTML / CSS', 'Python', 'SQL', 'NoSQL'].map(skill => (
+                {['C / C++', 'HTML / CSS', 'Python', 'SQL', 'NoSQL', 'Flask', 'Django'].map(skill => (
                   <span key={skill} className="px-4 py-2 bg-slate-800 rounded-lg text-slate-200 border border-slate-700 hover:border-indigo-400 hover:text-indigo-300 transition-colors">
                     {skill}
                   </span>
