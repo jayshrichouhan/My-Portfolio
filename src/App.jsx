@@ -200,6 +200,41 @@ const App = () => {
         </div>
       </section>
 
+      {/* Education Section */}
+      <section id="education" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center mb-10">
+            <GraduationCap className="w-8 h-8 text-indigo-600 mr-4" />
+            <h2 className="text-3xl font-bold text-slate-900">Education</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            
+            {/* Degree 1 */}
+            <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-100 rounded-bl-full -mr-4 -mt-4 opacity-50"></div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Master's Degree in Computer Applications</h3>
+              <p className="text-indigo-600 font-medium mb-4">June 2025 - Present</p>
+              <div className="flex items-start text-slate-600 mb-2">
+                <MapPin className="w-5 h-5 mr-2 text-slate-400 shrink-0" />
+                <span>Dev Sanskriti Vishwavidyalaya, Haridwar, Uttarakhand</span>
+              </div>
+            </div>
+
+            {/* Degree 2 */}
+            <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-100 rounded-bl-full -mr-4 -mt-4 opacity-50"></div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Bachelor of Science Degree in Information Technology</h3>
+              <p className="text-indigo-600 font-medium mb-4">June 2021 - May 2024</p>
+              <div className="flex items-start text-slate-600 mb-2">
+                <MapPin className="w-5 h-5 mr-2 text-slate-400 shrink-0" />
+                <span>Dev Sanskriti Vishwavidyalaya, Haridwar, Uttarakhand</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
