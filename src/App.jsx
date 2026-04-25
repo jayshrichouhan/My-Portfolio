@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Phone, MapPin, Briefcase, GraduationCap, Code, User, ChevronDown, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Briefcase, GraduationCap, Code, User, ChevronDown } from 'lucide-react';
 
 const App = () => {
   const [activeSection, setActiveSection] = useState('home');
