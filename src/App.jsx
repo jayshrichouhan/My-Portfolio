@@ -80,9 +80,9 @@ const App = () => {
             <Mail className="w-5 h-5 mr-2" />
             Contact Me
           </a>
-          <a href="tel:+919343550547" className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 shadow-sm transition-all">
+          <a href="tel:+91 1234564890" className="inline-flex items-center justify-center px-6 py-3 border border-slate-300 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 shadow-sm transition-all">
             <Phone className="w-5 h-5 mr-2" />
-            +91 9343550547
+            +91 1234567890
           </a>
         </div>
         <div className="mt-16 animate-bounce text-slate-400">
