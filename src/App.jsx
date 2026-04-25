@@ -257,9 +257,9 @@ const App = () => {
               <Mail className="w-5 h-5 mr-2" />
               chouhanjayshree03@gmail.com
             </a>
-            <a href="tel:+919343550547" className="hover:text-white transition-colors flex items-center">
+            <a href="tel:+911234567890" className="hover:text-white transition-colors flex items-center">
               <Phone className="w-5 h-5 mr-2" />
-              +91 9343550547
+              +91 1234567890
             </a>
           </div>
           <p className="text-sm">
